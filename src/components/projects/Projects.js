@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
-import nyc from "../../images/nyc.png";
+import project1 from "../../images/project1.png";
 import ci from "../../images/onboarding.png";
 import hd from "../../images/hd.png";
 import pp from "../../images/portfolio.png";
@@ -38,11 +38,11 @@ export default function Projects() {
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
                       New Year CountDown
                     </h5>
-                    <img src={nyc} alt={nyc} />
+                    <img src={project1} alt={project1} />
                     <div className="project--showcaseBtn">
                       <a
                         href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Web_Programming/tree/main/New-Year-Countdown"
+                          "https://github.com/Hyysuresh/nikestore"
                         }
                         target="_blank"
                         rel="noreferrer"
@@ -66,12 +66,9 @@ export default function Projects() {
                         fontWeight: 600,
                       }}
                     >
-                      The New Year Countdown Project is more than just a
-                      celebration; it's a testament to the human spirit and our
-                      shared aspirations for a brighter future. So, mark your
-                      calendars and get ready to be part of this global
-                      extravaganza as we count down to a new year filled with
-                      endless possibilities.
+                      I completed a full-stack web application deployment project,
+                      where I implemented a complete CI/CD and cloud-based infrastructure setup.
+                      This project helped me strengthen my DevOps skills and understand real-world deployment workflows. 
                     </p>
                   </h6>
                   <div
@@ -82,7 +79,7 @@ export default function Projects() {
                       fontWeight: 600,
                     }}
                   >
-                    HTML, CSS, JavaScript
+                    terraform, k8s, docker, jenkins, aws
                   </div>
                 </div>
               </Fade>

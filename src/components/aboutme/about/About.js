@@ -28,36 +28,29 @@ const About = () => {
           <Col md={7}>
             <Fade duration={3000}>
               <p className="home-about-body">
-                My name is <b className="purple">MD Mafujul Hasan </b> 
-                  and I am a <b className="purple">Computer Science and Engineering </b> 
-                    student at <b className="purple">Sonargaon University </b>
-                      in Dhaka, Bangladesh.
+                My name is <b className="purple"> SURESH GHASAL </b> 
+                  and I am a <b className="purple">Computer Science and Devops </b> 
+                    student at <b className="purple">Maharshi Dayanand Saraswati University </b>
+                      in Ajmer,Rajasthan, India.
                 <br />
                 <br />
-                        I am proficient in various programming languages such as &nbsp;
+                        I am Devops Engineer such as &nbsp;
                   <b className="purple">
                     {" "}
-                    C, C++, Java, Python, HTML, CSS, PHP, and JavaScript.{" "}
+                    linux, Git, Github, Docker, jenkins, Gitlab, Terrafrom, Ansible, kubernetes, Argocd, grafana, prometheus, Jira And Agentic Ai .{" "}
                   </b>
                 <br />
                 <br />
-                I also have experience working with frameworks and libraries such as &nbsp;
-
+                Whenever possible, I apply my passion for automating deployments,
+                building cloud-native infrastructure, and &nbsp;
                   <b className="purple">
                     {" "}
-                    NodeJS, ReactJS, OpenCV, Pandas, and NumPy.{" "}
+                    implementing modern DevOps workflows.
                   </b>
                 <br />
-                <br />
-                Whenever possible, I also apply my passion for developing
-                products with &nbsp;
-                  <b className="purple">
-                    {" "}
-                    Modern Javascript Library and Frameworks.
-                  </b>
-                <br />
-                <br />In my free time, I enjoy learning new technologies and &nbsp;
-                  <b className="purple">building new web technologies and products. </b>
+                <br />In my free time, I explore new DevOps tools, 
+                      experiment with automation, and work on cloud-native projects. and  &nbsp;
+                  <b className="purple">Learning new  tools and Most of Agentic Ai. </b>
               </p>
             </Fade>
           </Col>

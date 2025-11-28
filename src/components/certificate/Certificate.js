@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Graphics_Design from "../../images/Graphics_Design.jpg";
-import CCNA_Certificate from "../../images/CCNA_Certificate.jpg";
+import git  from "../../images/git0.png";
+import linux_Certificate from "../../images/linux.png";
 import cbta from "../../images/CBT&A.pdf";
-import c from "../../images/c.jpg";
+import ai96 from "../../images/ai96.png";
 import skill from "../../images/skill.png";
 import problem_solving from "../../images/problem_solving.png";
 import python from "../../images/python.png";
@@ -41,20 +41,20 @@ export default function Certificate() {
             </Col>
             <Col md={4}>
               <img
-                src={Graphics_Design}
+                src={git}
                 alt=""
                 style={{ width: "100%", height: "100%" }}
               />
             </Col>
             <Col md={4}>
               <img
-                src={CCNA_Certificate}
+                src={linux_Certificate}
                 alt=""
                 style={{ width: "100%", height: "100%" }}
               />
             </Col>
             <Col md={4}>
-              <img src={c} alt="" style={{ width: "100%", height: "100%" }} />
+              <img src={ai96} alt="" style={{ width: "100%", height: "100%" }} />
             </Col>
             <Col md={4}>
               <img

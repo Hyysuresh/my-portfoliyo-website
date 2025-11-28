@@ -1,12 +1,12 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import vs from "../../../images/Vs.png";
-import pc from "../../../images/pc.png";
-import git from "../../../images/git.png";
+import aws from "../../../images/aws.png";
+import docker from "../../../images/docker.png";
 import github from "../../../images/github.png";
-import cb from "../../../images/cb.png";
-import pg from "../../../images/pg.png";
-import pm from "../../../images/pm.png";
+import k8s from "../../../images/k8s.png";
+import tera from "../../../images/tera.png";
+import grafana from "../../../images/garfana.png";
 import chrome from "../../../images/chorme.svg";
 import { Link } from "react-router-dom";
 import Zoom from "react-reveal/Zoom";
@@ -34,10 +34,10 @@ export default function Toolkit() {
             <img src={vs} alt="" style={{ width: "85%", height: "85%" }} />
           </Col>
           <Col xs={4} md={2} className="tech-icons">
-            <img src={pc} alt="" style={{ width: "85%", height: "85%" }} />
+            <img src={aws} alt="" style={{ width: "85%", height: "85%" }} />
           </Col>
           <Col xs={4} md={2} className="tech-icons">
-            <img src={git} alt="" style={{ width: "85%", height: "85%" }} />
+            <img src={docker} alt="" style={{ width: "85%", height: "85%" }} />
           </Col>
           <Col xs={4} md={2} className="tech-icons">
             <img
@@ -51,13 +51,13 @@ export default function Toolkit() {
             />
           </Col>
           <Col xs={4} md={2} className="tech-icons">
-            <img src={cb} alt="" style={{ width: "95%", height: "95%" }} />
+            <img src={k8s} alt="" style={{ width: "95%", height: "95%" }} />
           </Col>
           <Col xs={4} md={2} className="tech-icons">
-            <img src={pg} alt="" style={{ width: "95%", height: "95%" }} />
+            <img src={tera} alt="" style={{ width: "95%", height: "95%" }} />
           </Col>
           <Col xs={4} md={2} className="tech-icons">
-            <img src={pm} alt="" style={{ width: "95%", height: "95%" }} />
+            <img src={grafana} alt="" style={{ width: "95%", height: "95%" }} />
           </Col>
           <Col xs={4} md={2} className="tech-icons">
             <img src={chrome} alt="" style={{ width: "95%", height: "95%" }} />
