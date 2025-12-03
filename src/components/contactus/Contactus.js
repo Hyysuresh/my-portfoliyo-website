@@ -154,7 +154,7 @@ export default function Contactus() {
                   </div>
                   <div className="contact-map">
                     <iframe
-                      src="https://www.google.com/maps/place/26%C2%B045'12.9%22N+74%C2%B043'35.3%22E/@26.753591,74.7238941,17z/data=!3m1!4b1!4m4!3m3!8m2!3d26.753591!4d74.726469?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+                      src="https://www.google.com/maps/place/%E0%A4%95%E0%A4%B0%E0%A4%95%E0%A5%87%E0%A4%B0%E0%A5%80,+%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%BE%E0%A4%A8+341516/@27.2835058,74.8692726,16z"
                       frameBorder="0"
                       allowFullScreen=""
                       aria-hidden="false"

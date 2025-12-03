@@ -3,9 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
 import project1 from "../../images/project1.png";
-import ci from "../../images/onboarding.png";
-import hd from "../../images/hd.png";
-import pp from "../../images/portfolio.png";
+import shopify from "../../images/shopify.png"
+import golden from "../../images/goldenbank.png";
+import wonder from "../../images/wonder.png";
 import { FaCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
@@ -36,7 +36,7 @@ export default function Projects() {
                 >
                   <div className="projectContent">
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      New Year CountDown
+                      Nike Store Landing Page
                     </h5>
                     <img src={project1} alt={project1} />
                     <div className="project--showcaseBtn">
@@ -79,7 +79,7 @@ export default function Projects() {
                       fontWeight: 600,
                     }}
                   >
-                    terraform, k8s, docker, jenkins, aws
+                    Docker , Jenkins, Terraform, Kubernetes, Helm
                   </div>
                 </div>
               </Fade>
@@ -96,13 +96,13 @@ export default function Projects() {
                 >
                   <div className="projectContent">
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      Heart Disease Prediction
+                      golden Bank Onboarding System
                     </h5>
-                    <img src={hd} alt={hd} />
+                    <img src={golden} alt={golden} />
                     <div className="project--showcaseBtn">
                       <a
                         href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Machine_Learning/tree/main/Heart%20Disease%20Prediction"
+                          "https://github.com/Hyysuresh/golden-bank-app"
                         }
                         target="_blank"
                         rel="noreferrer"
@@ -126,11 +126,10 @@ export default function Projects() {
                         fontWeight: 600,
                       }}
                     >
-                      Use of AI and Machine Learning: Artificial intelligence
-                      and machine learning are already being used in healthcare
-                      to help predict heart disease. In the future, these
-                      technologies could become more advanced, enabling more
-                      accurate predictions of heart disease risk.
+                      Golden Bank Onboarding System is a web application that
+                      streamlines the customer onboarding process for Golden Bank,
+                      providing a user-friendly interface for new customers to
+                      submit their information and user check money and resive and send money
                     </p>
                   </h6>
                   <div
@@ -141,7 +140,7 @@ export default function Projects() {
                       fontWeight: 600,
                     }}
                   >
-                    Pandas, Matplotlib, Scikit-Learn
+                    Docker, terraform, Jenkins, Kubernetes
                   </div>
                 </div>
               </Fade>
@@ -158,13 +157,13 @@ export default function Projects() {
                 >
                   <div className="projectContent">
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      Online Payroll Management System
+                      Shopify Ecommerce Landing Page
                     </h5>
-                    <img src={ci} alt={ci} />
+                    <img src={shopify} alt={shopify} />
                     <div className="project--showcaseBtn">
                       <a
                         href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Online-Payroll-Management-System"
+                          "https://github.com/Hyysuresh/shopify"
                         }
                         target="_blank"
                         rel="noreferrer"
@@ -188,11 +187,12 @@ export default function Projects() {
                         fontWeight: 600,
                       }}
                     >
-                      A Payroll management System with feature like generate
-                      payslip & reports. It manages salaries, leaves, branches,
-                      employees, designations, shifts, holidays and employee
-                      attendance. It has chat application so internal employees
-                      can use that feature.
+                      this Shofiy project i have deployment fully
+                      i created small stoge Docker file and to deploy DockerHub
+                      i ceated jenkins file for CI/CD pipeline And
+                      terraform for infrastructure as a Code
+                      and use k8s for deployment and use helm chart
+                      for managing k8s resources
                     </p>
                   </h6>
                   <div
@@ -203,7 +203,7 @@ export default function Projects() {
                       fontWeight: 600,
                     }}
                   >
-                    CSS, JavaScript, PHP, SCSS
+                    Docker , Anshible, GitLab, Kubernetes
                   </div>
                 </div>
               </Fade>
@@ -220,13 +220,13 @@ export default function Projects() {
                 >
                   <div className="projectContent">
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      Personal Portfolio
+                      Wanderlust Mega Project
                     </h5>
-                    <img src={pp} alt={pp} />
+                    <img src={wonder} alt={wonder} />
                     <div className="project--showcaseBtn">
                       <a
                         href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Personal-Portfolio"
+                          "https://github.com/Hyysuresh/Wanderlust-Mega-Project"
                         }
                         target="_blank"
                         rel="noreferrer"
@@ -250,9 +250,12 @@ export default function Projects() {
                         fontWeight: 600,
                       }}
                     >
-                      Welcome to my personal portfolio. Explore my work, skills,
-                      and achievements in a concise and visually appealing
-                      format. Get a glimpse of my expertise and creativity.
+                      Wanderlust Mega Project is a comprehensive
+                      travel platform that offers users a one-stop
+                      solution for planning, booking, and sharing
+                      their travel experiences, featuring
+                      personalized itineraries, real-time updates,
+                      and a vibrant community of fellow travelers.
                     </p>
                   </h6>
                   <div
@@ -263,7 +266,7 @@ export default function Projects() {
                       fontWeight: 600,
                     }}
                   >
-                    HTML, CSS, SCSS, React, JavaScript
+                    Docker , Jenkins, Terraform, Kubernetes, Helm
                   </div>
                 </div>
               </Fade>

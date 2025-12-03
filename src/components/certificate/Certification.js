@@ -2,9 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
-import ucsc from "../../images/ucsc.png";
-import ufm from "../../images/ufm.png";
+import git from "../../images/git0.png";
+import mdsu from "../../images/MDSU.jpeg";
 import cbta from "../../images/CBT&A.pdf";
+import linux from "../../images/linux.png";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
 
@@ -22,14 +23,12 @@ export default function Certification() {
                 <h1 className="aboutme-heading">Certification</h1>
               </Zoom>
             </Col>
-            <Col ms={12} className="mt-3">
-              <Row className="g-5">
                 <Col md={4}>
                   <Fade bottom duration={2000} distance="20px">
                     <div className="cert-card">
                       <div className="content">
                         <a
-                          href="https://www.hackerrank.com/certificates/3573ea1a35bb"
+                          href={cbta}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -38,7 +37,7 @@ export default function Certification() {
                             className="cert-header"
                             style={{ backgroundColor: "white" }}
                           >
-                            {<img className="logo_img" src={ucsc} alt={ucsc} />}
+                            {<img className="logo_img" src={linux} alt={linux} />}
                           </div>
                           <div className="content-details fadeIn-top">
                             <h3
@@ -55,13 +54,13 @@ export default function Certification() {
                           className="cert-body-title"
                           style={{ fontWeight: 700, color: "#fbd9ad" }}
                         >
-                          Problem Solving Basic : Programming Fundamentals
+                          Linux Commands And Shell Scripting
                         </h2>
                         <h3
                           className="cert-body-subtitle"
                           style={{ color: "#eb90ff", marginBottom: "0px" }}
                         >
-                          - HackerRank
+                          - Coursera
                         </h3>
                       </div>
                     </div>
@@ -81,7 +80,7 @@ export default function Certification() {
                             className="cert-header"
                             style={{ backgroundColor: "white" }}
                           >
-                            {<img className="logo_img" src={ufm} alt={ufm} />}
+                            {<img className="logo_img" src={git} alt={git} />}
                           </div>
                           <div className="content-details fadeIn-top">
                             <h3
@@ -98,14 +97,13 @@ export default function Certification() {
                           className="cert-body-title"
                           style={{ fontWeight: 700, color: "#fbd9ad" }}
                         >
-                          Basic Computer Application for Everyone: IT Support
-                          Technician level-1
+                          Git & GitHub Essentials
                         </h2>
                         <h3
                           className="cert-body-subtitle"
                           style={{ color: "#eb90ff", marginBottom: "0px" }}
                         >
-                          - Bangladesh Technical Education Board
+                          - Coursera
                         </h3>
                       </div>
                     </div>
@@ -116,7 +114,7 @@ export default function Certification() {
                     <div className="cert-card">
                       <div className="content">
                         <a
-                          href="https://www.hackerrank.com/certificates/af66a6615aad"
+                          href={cbta}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -125,7 +123,7 @@ export default function Certification() {
                             className="cert-header"
                             style={{ backgroundColor: "white" }}
                           >
-                            {<img className="logo_img" src={ucsc} alt={ucsc} />}
+                            {<img className="logo_img" src={mdsu} alt={mdsu} />}
                           </div>
                           <div className="content-details fadeIn-top">
                             <h3
@@ -142,20 +140,18 @@ export default function Certification() {
                           className="cert-body-title"
                           style={{ fontWeight: 700, color: "#fbd9ad" }}
                         >
-                          Python Basic for : Programming Fundamentals
+                          BSc in PCM
                         </h2>
                         <h3
                           className="cert-body-subtitle"
                           style={{ color: "#eb90ff", marginBottom: "0px" }}
                         >
-                          - HackerRank
+                          - MDSU Ajmer Rajasthan India
                         </h3>
                       </div>
                     </div>
                   </Fade>
                 </Col>
-              </Row>
-            </Col>
           </Row>
           <div className="blog--viewAll">
             <Link to="/certificatepage">
