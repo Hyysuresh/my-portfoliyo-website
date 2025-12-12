@@ -29,7 +29,7 @@ const About = () => {
             <Fade duration={3000}>
               <p className="home-about-body">
                 My name is <b className="purple"> SURESH GHASAL </b> 
-                  and I am a <b className="purple">Computer Science and Devops </b> 
+                  and I am a <b className="purple"> Beachlor of science </b> 
                     student at <b className="purple">Maharshi Dayanand Saraswati University </b>
                       in Ajmer,Rajasthan, India.
                 <br />
