@@ -14,7 +14,7 @@ export default function Ranking() {
   return (
     <div className="mt-4">
       <Zoom left cascade>
-        <h1>See my rank</h1>
+        <h1> O Coming my Ranking 🤫</h1>
       </Zoom>
       <Container className="mt-5">
         <Row className="g-5">
