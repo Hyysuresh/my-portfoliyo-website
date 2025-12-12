@@ -15,11 +15,6 @@ pipeline {
                 echo "---------build is sussecfully---------"
             }
         }
-        stage("test") {
-            steps {
-                echo "test is sussecfully"
-            }
-        }
         stage("push to DockerHub") {
             steps {
                withCredentials([usernamePassword(
