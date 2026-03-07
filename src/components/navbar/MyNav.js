@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import { Navbar, Nav, Container, Button, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
+import { CgGitFork, CgFileDocument } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
@@ -10,20 +10,25 @@ import {
 } from "react-icons/ai";
 import { FaBlog } from "react-icons/fa";
 import "../../style.css";
-import { CgFileDocument } from "react-icons/cg";
+
 export default function MyNav() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  function scrollHandler() {
+  const scrollHandler = () => {
     if (window.scrollY >= 20) {
       updateNavbar(true);
     } else {
       updateNavbar(false);
     }
-  }
+  };
 
-  window.addEventListener("scroll", scrollHandler);
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
 
   return (
     <Navbar
@@ -33,14 +38,18 @@ export default function MyNav() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/">
-          <div className="d-flex flex-row justify-content-between">
-            <img src="./profile.png" className="img-fluid logo" alt="brand" />
+        {/* Brand */}
+        <Navbar.Brand as={Link} to="/">
+          <div className="d-flex flex-row align-items-center">
+            <img
+              src="./profile.png"
+              className="img-fluid logo"
+              alt="brand"
+            />
             <h5
               id="navhead"
               style={{
-                marginLeft: "21px",
-                paddingTop: "6px",
+                marginLeft: "15px",
                 color: "#fbd9ad",
               }}
             >
@@ -48,21 +57,23 @@ export default function MyNav() {
             </h5>
           </div>
         </Navbar.Brand>
+
+        {/* Toggle Button */}
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-          }}
+          onClick={() => updateExpanded(expand ? false : "expanded")}
         >
           <span></span>
           <span></span>
           <span></span>
         </Navbar.Toggle>
+
         <Navbar.Collapse id="responsive-navbar-nav" className="navbarmain">
-          <Nav className="ml-auto" defaultActiveKey="#home">
+          <Nav className="ms-auto">
+
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome /> Home
               </Nav.Link>
             </Nav.Item>
 
@@ -72,10 +83,7 @@ export default function MyNav() {
                 to="/projectspage"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
+                <AiOutlineFundProjectionScreen /> Projects
               </Nav.Link>
             </Nav.Item>
 
@@ -85,7 +93,7 @@ export default function MyNav() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument /> Resume
               </Nav.Link>
             </Nav.Item>
 
@@ -95,30 +103,106 @@ export default function MyNav() {
                 to="/certificatepage"
                 onClick={() => updateExpanded(false)}
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Certifications
+                <ImBlog /> Certifications
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
+            {/* Blogs Dropdown */}
+            <NavDropdown title={<><FaBlog /> Blogs</>} id="blogs-dropdown">
+              <NavDropdown.Item
                 as={Link}
-                to="/blogs"
+                to="/blogs_page/networking"
                 onClick={() => updateExpanded(false)}
               >
-                <FaBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item>
+                Networking
+              </NavDropdown.Item>
 
+              <NavDropdown.Item
+                as={Link}
+                to="/blogs_page/Linux"
+                onClick={() => updateExpanded(false)}
+              >
+                Linux
+              </NavDropdown.Item>
+
+              <NavDropdown.Item
+                as={Link}
+                to="/blogs_page/docker"
+                onClick={() => updateExpanded(false)}
+              >
+                Docker
+              </NavDropdown.Item>
+
+              <NavDropdown.Item
+                as={Link}
+                to="/blogs_page/Jenkins"
+                onClick={() => updateExpanded(false)}
+              >
+                Jenkins
+              </NavDropdown.Item>
+
+              <NavDropdown.Item
+                as={Link}
+                to="/blogs_page/Terraform"
+                onClick={() => updateExpanded(false)}
+              >
+                Terraform
+              </NavDropdown.Item>
+
+              <NavDropdown.Item
+                as={Link}
+                to="/blogs_page/Ansible"
+                onClick={() => updateExpanded(false)}
+              >
+                Ansible
+              </NavDropdown.Item>
+
+              <NavDropdown.Item
+                as={Link}
+                to="/blogs_page/kubernetes"
+                onClick={() => updateExpanded(false)}
+              >
+                Kubernetes
+              </NavDropdown.Item>
+
+              <NavDropdown.Item
+                as={Link}
+                to="/blogs_page/Argocd"
+                onClick={() => updateExpanded(false)}
+              >
+                ArgoCD
+              </NavDropdown.Item>
+
+              <NavDropdown.Item
+                as={Link}
+                to="/blogs_page/AWS"
+                onClick={() => updateExpanded(false)}
+              >
+                AWS
+              </NavDropdown.Item>
+
+              <NavDropdown.Item
+                as={Link}
+                to="/blogs_page/Python"
+                onClick={() => updateExpanded(false)}
+              >
+                Python
+              </NavDropdown.Item>
+            </NavDropdown>
+
+
+            {/* GitHub Button */}
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/Hyysuresh/"
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <CgGitFork style={{ fontSize: "1.2em" }} />
+                <AiFillStar style={{ fontSize: "1.1em", marginLeft: "5px" }} />
               </Button>
             </Nav.Item>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
