@@ -14,10 +14,10 @@ on:
         default: "dev"
         required: true
         type: choice
-jobs:
-   permissions:
+permissions:
      pages: write
      id-token: write
+jobs:
   code:
     runs-on: ubuntu-latest
     steps:
