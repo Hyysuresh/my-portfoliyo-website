@@ -1,0 +1,45 @@
+name: CICD
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: this is the environment 
+        options:
+          - dev
+          - stg
+          - prod
+        default: "dev"
+        required: true
+        type: choice
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone the code
+        run: echo "code clone successfully"
+  
+  build:
+    needs: code
+    runs-on: ubuntu-latest
+    steps:
+      - name: build the application
+        run: echo "application build successfully"
+
+  test:
+    needs: [ build,code]
+    runs-on: ubuntu-latest
+    steps:
+      - name: test the application
+        run: echo "application test successfully"
+
+  deploy:
+    needs: [test, build,code]
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy the application
+        run: echo "application deploy successfully"
+  
+      
+      
+  
