@@ -15,6 +15,9 @@ on:
         required: true
         type: choice
 jobs:
+   permissions:
+     pages: write
+     id-token: write
   code:
     runs-on: ubuntu-latest
     steps:
