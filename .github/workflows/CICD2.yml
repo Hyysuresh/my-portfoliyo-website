@@ -1,0 +1,24 @@
+name: portfolio
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github
+      - README.md
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup Github pages
+        uses: actions/configure-pages@v4
+      - name: upload static files
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: "."
+      - name: Deploy to Github pages
+        uses: actions/deploy-pages@v4
+       
