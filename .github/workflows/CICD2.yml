@@ -3,7 +3,17 @@ name: portfolio
 on:
   push:
     branches: [main]
-
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: this is the environment 
+        options:
+          - dev
+          - stg
+          - prod
+        default: "dev"
+        required: true
+        type: choice
 jobs:
   code:
     runs-on: ubuntu-latest
