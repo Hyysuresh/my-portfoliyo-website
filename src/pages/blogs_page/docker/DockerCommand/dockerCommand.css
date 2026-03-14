@@ -1,0 +1,274 @@
+/* PAGE BACKGROUND */
+
+.docker-page{
+  min-height:100vh;
+  padding:50px;
+
+  background: radial-gradient(circle at top,#0f172a,#020617);
+  font-family: "Fira Code", monospace;
+  color:white;
+}
+
+
+/* TITLE */
+
+.docker-page h1{
+
+  text-align:center;
+  font-size:42px;
+
+  background:linear-gradient(90deg,#38bdf8,#818cf8);
+  -webkit-background-clip:text;
+  color:transparent;
+
+  margin-bottom:40px;
+
+  animation:titleGlow 3s infinite alternate;
+
+}
+
+@keyframes titleGlow{
+
+  from{
+    text-shadow:0 0 10px #38bdf8;
+  }
+
+  to{
+    text-shadow:0 0 30px #818cf8;
+  }
+
+}
+
+/* SEARCH BAR */
+
+.docker-page input{
+
+  width:100%;
+  padding:14px;
+
+  border:none;
+  border-radius:10px;
+
+  margin-bottom:25px;
+
+  background:rgba(255,255,255,0.05);
+  color:white;
+
+  backdrop-filter:blur(10px);
+
+}
+
+
+
+/* FILTER BUTTONS */
+
+.docker-page button{
+
+  margin:5px;
+  padding:8px 16px;
+
+  border:none;
+  border-radius:20px;
+
+  background:rgba(255,255,255,0.06);
+
+  color:white;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+}
+
+
+.docker-page button:hover{
+
+  background:#38bdf8;
+  color:black;
+
+  transform:scale(1.05);
+
+}
+
+
+
+/* CATEGORY TITLE */
+
+.docker-page h2{
+
+  margin-top:40px;
+  color:#60a5fa;
+  border-left:4px solid #60a5fa;
+  padding-left:10px;
+
+}
+
+
+
+/* COMMAND CARD */
+
+.docker-page h3{
+
+  color:#38bdf8;
+  margin-top:25px;
+
+}
+
+
+/* TERMINAL STYLE CARD */
+
+.docker-page h3 + p{
+
+  margin-bottom:10px;
+  color:#cbd5f5;
+
+}
+
+
+
+/* TERMINAL BLOCK */
+
+.docker-page code{
+
+  display:block;
+
+  background:#020617;
+
+  border:1px solid #1e293b;
+
+  padding:14px;
+
+  border-radius:8px;
+
+  font-size:15px;
+
+  color:#4ade80;
+
+  position:relative;
+
+  overflow:hidden;
+
+  animation:typing 2s steps(40,end);
+
+}
+
+/* TYPING EFFECT */
+
+@keyframes typing{
+
+  from{
+    width:0;
+  }
+
+  to{
+    width:100%;
+  }
+
+}
+
+
+
+/* COMMAND CONTAINER */
+
+.docker-page code + button{
+
+  margin-top:10px;
+
+  background:linear-gradient(90deg,#38bdf8,#6366f1);
+
+  border:none;
+
+  padding:8px 14px;
+
+  border-radius:8px;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+}
+
+
+
+/* HOVER EFFECT */
+
+.docker-page code:hover{
+
+  box-shadow:0 0 15px #38bdf8;
+
+}
+
+
+
+/* COPY BUTTON HOVER */
+
+.docker-page code + button:hover{
+
+  transform:scale(1.08);
+
+  box-shadow:0 0 15px #818cf8;
+
+}
+
+
+
+/* HEART ANIMATION */
+
+.heart{
+
+  position:absolute;
+
+  font-size:18px;
+
+  animation:floatHeart 1.5s linear forwards;
+
+}
+
+
+@keyframes floatHeart{
+
+  0%{
+    transform:translateY(0) scale(1);
+    opacity:1;
+  }
+
+  100%{
+    transform:translateY(-120px) scale(1.8);
+    opacity:0;
+  }
+
+}
+
+
+
+/* GLASSMORPHISM CARD */
+
+.docker-page > div{
+
+  background:rgba(255,255,255,0.04);
+
+  backdrop-filter:blur(12px);
+
+  border-radius:12px;
+
+  padding:20px;
+
+  margin-bottom:20px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.6);
+
+  transition:0.4s;
+
+}
+
+
+
+/* CARD HOVER */
+
+.docker-page > div:hover{
+
+  transform:translateY(-6px);
+
+  box-shadow:0 20px 50px rgba(0,0,0,0.8);
+
+}

@@ -14,9 +14,13 @@ on:
         default: "dev"
         required: true
         type: choice
+<<<<<<< HEAD
 permissions:
      pages: write
      id-token: write
+=======
+
+>>>>>>> 700d74f (docker theroy and docker command add)
 jobs:
   code:
     runs-on: ubuntu-latest

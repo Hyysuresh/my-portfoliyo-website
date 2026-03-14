@@ -2,13 +2,11 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import "./style.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import NetworkingHome from "./pages/blogs_page/networking/Networking";
 // import IPAddress from "./pages/blogs_page/networking/IPAddress";
 
 import "react-vertical-timeline-component/style.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import DockerCommand from "./pages/blogs_page/docker/DockerCommand/dockerCommand";
 import Preloader from "./Preloader";
 import MyNav from "./components/navbar/MyNav";
 import Home from "./pages/home_page/HomePage";
@@ -25,6 +23,7 @@ import TechnicalSkill from "./components/aboutme/skills/TechnicalSkill";
 import ComingSoon from "./pages/comingsoon_page/comingsoon";
 import Notfound from "./pages/blogs_page/notfound";
 import Networking from "./pages/blogs_page/networking/Networking";
+import Docker from "./pages/blogs_page/docker/dockerTheory/docker";
 import TechnicalJourney from "./components/aboutme/journey/TechnicalJourney";
 import ProjectJourney from "./components/aboutme/journey/ProjectJourney";
 import SocialMedia from "./components/aboutme/social_media/SocialMedia";
@@ -66,6 +65,10 @@ function App() {
 
           {/* Networking Blogs */}
           <Route path="/blogs_page/networking" element={<Networking />} />
+          {/* Docker Blogs */}
+          <Route path="/blogs_page/docker/dockerTheory" element={<Docker />} />
+          {/* Docker Commands */}
+          <Route path="/blogs_page/docker/DockerCommand" element={<DockerCommand />} />
           {/* Temporary */}
           <Route path="/blogs" element={<ComingSoon />} />
 

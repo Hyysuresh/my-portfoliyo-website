@@ -1,0 +1,277 @@
+/* PAGE BACKGROUND */
+
+.docker-page {
+  background: linear-gradient(135deg,#0f172a,#1e293b,#020617);
+  min-height: 100vh;
+  padding: 60px 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  animation: fadePage 1.2s ease;
+}
+
+/* PAGE FADE */
+
+@keyframes fadePage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* MAIN CONTAINER */
+
+.docker-container {
+  width: 85%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+
+
+/* TITLE */
+
+.docker-title {
+  text-align: center;
+  font-size: 46px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+
+  background: linear-gradient(90deg,#38bdf8,#60a5fa,#818cf8);
+  -webkit-background-clip: text;
+  color: transparent;
+
+  animation: glowTitle 3s infinite alternate;
+}
+
+@keyframes glowTitle {
+
+  from{
+    text-shadow: 0 0 10px #38bdf8;
+  }
+
+  to{
+    text-shadow: 0 0 30px #818cf8;
+  }
+
+}
+
+
+
+/* SECTIONS */
+
+.docker-section,
+.network-section {
+  margin-bottom: 40px;
+  padding: 25px;
+
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.03);
+
+  transition: all 0.4s ease;
+
+  animation: slideUp 0.8s ease;
+}
+
+@keyframes slideUp {
+
+  from{
+    transform: translateY(40px);
+    opacity:0;
+  }
+
+  to{
+    transform: translateY(0);
+    opacity:1;
+  }
+
+}
+
+
+
+/* HOVER EFFECT */
+
+.docker-section:hover,
+.network-section:hover {
+
+  transform: translateY(-6px);
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+
+  background: rgba(255,255,255,0.06);
+
+}
+
+
+
+/* HEADINGS */
+
+.docker-section h2,
+.network-section h2 {
+
+  font-size: 28px;
+
+  margin-bottom: 10px;
+
+  color: #38bdf8;
+
+  border-left: 4px solid #38bdf8;
+
+  padding-left: 12px;
+
+}
+
+
+
+.docker-section h3 {
+
+  margin-top: 15px;
+
+  color: #93c5fd;
+
+}
+
+
+
+/* TEXT */
+
+.docker-section p,
+.network-section p {
+
+  line-height: 1.8;
+
+  color: #e2e8f0;
+
+}
+
+
+
+/* LIST */
+
+.docker-section ul,
+.network-section ul {
+
+  margin-top: 10px;
+
+  padding-left: 20px;
+
+}
+
+
+
+.docker-section li,
+.network-section li {
+
+  margin-bottom: 10px;
+
+  transition: 0.3s;
+
+}
+
+
+
+/* LIST HOVER */
+
+.docker-section li:hover,
+.network-section li:hover {
+
+  transform: translateX(6px);
+
+  color: #38bdf8;
+
+}
+
+
+
+/* IMAGE CONTAINER */
+
+.image-container,
+.image-container1 {
+
+  text-align: center;
+
+  margin-top: 25px;
+
+}
+
+
+
+/* DOCKER IMAGE */
+
+.docker-img {
+
+  width: 100%;
+
+  max-width: 650px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+
+  animation: floatImage 4s ease-in-out infinite;
+
+}
+
+
+
+/* OSI IMAGE */
+
+.network-osi-model {
+
+  width: 100%;
+
+  max-width: 420px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+
+  animation: floatImage 4s ease-in-out infinite;
+
+}
+
+
+
+/* FLOAT ANIMATION */
+
+@keyframes floatImage {
+
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-10px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+  .docker-container{
+    width:95%;
+    padding:25px;
+  }
+
+  .docker-title{
+    font-size:32px;
+  }
+
+}

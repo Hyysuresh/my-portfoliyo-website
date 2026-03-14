@@ -125,13 +125,24 @@ export default function MyNav() {
                 Linux
               </NavDropdown.Item>
 
-              <NavDropdown.Item
-                as={Link}
-                to="/blogs_page/docker"
-                onClick={() => updateExpanded(false)}
-              >
-                Docker
-              </NavDropdown.Item>
+              <NavDropdown title="Docker" id="docker-dropdown">
+                <NavDropdown.Item
+                  as={Link}
+                  to="/blogs_page/docker/dockerTheory"
+                  onClick={() => updateExpanded(false)}
+                >
+                  Docker Theory
+                </NavDropdown.Item>
+
+                <NavDropdown.Item
+                  as={Link}
+                  to="/blogs_page/docker/DockerCommand"
+                  onClick={() => updateExpanded(false)}
+                >
+                  Docker Command
+                </NavDropdown.Item>
+              </NavDropdown>
+
 
               <NavDropdown.Item
                 as={Link}
