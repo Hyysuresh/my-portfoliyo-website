@@ -1,7 +1,7 @@
 import React from "react";
 import "./networking.css";
-import networkImg from "/app/src/images/networking1.png";
-import networkImg2 from "/app/src/images/networking2.png";
+import networkImg from "../../../images/networking1.png";
+import networkImg2 from "../../../images/networking2.png";
 
 function Networking() {
   return (

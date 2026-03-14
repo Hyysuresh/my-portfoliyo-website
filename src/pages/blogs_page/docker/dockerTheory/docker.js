@@ -1,9 +1,9 @@
 import React from "react";
 import "./docker.css";
-import dockerImg from "/app/src/images/docker1.png";
-import dockerImg2 from "/app/src/images/docker2.png";
-import dockerImg3 from "/app/src/images/docker3.webp";
-import dockerImg4 from "/app/src/images/docker4.png";
+import dockerImg from "../../../../images/docker1.png";
+import dockerImg2 from "../../../../images/docker2.png";
+import dockerImg3 from "../../../../images/docker3.webp";
+import dockerImg4 from "../../../../images/docker4.png";
 function Docker() {
   return (
     <div className="docker-page">
